@@ -27,13 +27,3 @@ pytest = "^8.2.2"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
-
-[tool.coverage.run]
-include = [
-    # omit anything in a .local directory anywhere
-    "*/.local/*",
-    # omit everything in /usr
-    "/usr/*",
-    # omit this single file
-    "utils/tirefire.py",
-    ]
